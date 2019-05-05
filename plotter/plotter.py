@@ -49,7 +49,7 @@ class Plotter:
                 logging.info(type(dict_of_items))
                 for key, list_of_values in dict_of_items.items():
                     for value in list_of_values:
-                        logging.info("{} {}".format(key, value))
+                        logging.info("Sent_timestamp:{},Latency_in_milliseconds:{}".format(key,value))
                 time.sleep(5)
 
     def cleanup(self):

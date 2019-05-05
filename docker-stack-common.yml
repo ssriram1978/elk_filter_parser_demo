@@ -52,6 +52,10 @@ services:
         - "/etc/localtime:/etc/localtime:ro"
     plotter:
       image: plotter:latest
+      depends_on:
+        - elasticsearch
+        - logstash
+        - kibana
       volumes:
         - /var/run/docker.sock:/var/run/docker.sock
         - "/etc/timezone:/etc/timezone:ro"
