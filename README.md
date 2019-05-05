@@ -31,7 +31,7 @@ documents.
 In order to convert latency string to float, I used this script in Kibana:
 latency --> painless  --> return Float.parseFloat(doc['latency.keyword'].value);
 
-![](Screenshot 2019-05-05 at 19.04.06.png)
+![](Latency_vs_time.png)
 
 Ping me for any questions.
 
