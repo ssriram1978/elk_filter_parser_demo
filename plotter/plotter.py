@@ -6,6 +6,8 @@ import sys
 import time
 import traceback
 import json
+import datetime
+
 
 logging.basicConfig(format='%(message)s',
                     level=logging.INFO)
@@ -46,7 +48,6 @@ class Plotter:
         with open('timestamp_latency_sample.txt') as f:
             for line in f:
                 dict_of_items = json.loads(line)
-                logging.info(type(dict_of_items))
                 for key, list_of_values in dict_of_items.items():
                     for value in list_of_values:
                         logging.info("Sent_timestamp:{},Latency_in_milliseconds:{}".format(key,value))
