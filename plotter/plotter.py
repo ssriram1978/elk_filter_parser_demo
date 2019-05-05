@@ -59,6 +59,7 @@ class Plotter:
 
 if __name__ == '__main__':
     plotter = Plotter()
+    time.sleep(180)
     try:
         while True:
             plotter.perform_job()
